@@ -1,0 +1,271 @@
+body{
+	background: #f9f8f0;
+	font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+}
+input {
+	width: 250px;
+	height: 56px;
+	background: #fff;
+	border-radius: 50px;
+	padding:0 15px;
+	border:3px solid #eeeeee;
+	color: #605a51;
+}
+button{
+	width: 120px;
+	height: 35px;
+	border:none;
+	border-radius: 35px;
+	background: #ff9600;
+	color: #f9f8f0;
+}
+h2{
+	font-weight: 600;
+	color: #403a31;
+	padding:20px 0;
+}
+.text-center{
+	text-align: center;
+}
+.title{
+	text-align: center;
+	font-size: 26px;
+	margin-bottom: 40px; 
+	font-weight: 600;
+	color: #403a31;
+}
+.title span{
+	display: inline-block;
+	padding:0 20px 10px 20px;
+	border-bottom: 3px solid #ff9600;
+}
+.container{
+	width: 1000px;
+	margin:0 auto;
+	padding-top: 14vh; 
+}
+.content{
+	margin-bottom: 80px;
+	color: #605a51;
+	font-size: 14px;
+}
+
+
+.head{
+	height: 100px;
+	margin-bottom: 50px;
+	text-align: center;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #ddd;
+}
+.head img{
+	height: 100%;
+}
+
+.xmodel{
+	text-align: center;
+}
+.xmodel p{
+	width: 250px;
+	margin:0 auto;
+	height:30px;
+	line-height: 30px;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 50px;
+}
+.xmodel input{
+	margin-bottom: 40px;
+}
+
+.directive{
+	display: flex;
+}
+.directive div{
+	flex: 1;
+	padding:0 20px;
+}
+.directive div{
+	text-align: center;
+}
+.directive h2 {
+	text-align: center;
+}
+.directive ul {
+	text-align: center;
+	padding: 10px 0 30px;
+	line-height: 25px;
+}
+.directive ul li span{
+	padding-left: 20px;
+}
+.directive ul li p{
+	margin-bottom: 18px;
+}
+.directive ul li p a{
+	padding:0 3px;
+}
+
+.directive p button{
+	width: 90px;
+	height: 30px;
+}
+.directive p{
+	text-align: center;
+}
+.directive input ,.directive p {
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.cart{
+	border:1px solid #e8e8e8;
+	background: #fff;
+	margin-bottom: 15px;
+}
+.cart .cart-title{
+	display: flex;
+	justify-content:space-between;
+}
+.cart .cart-title ,.cart .cart-body , .cart .cart-accounts{
+	padding:0 20px;
+}
+.cart .cart-body{
+	padding:30px 20px;
+	border-bottom: 1px solid #e8e8e8;
+}
+.cart .cart-body{
+	display: flex;
+	flex-direction:row;
+}
+.cart .cart-body .button button{
+	display: inline-block;
+	margin-bottom: 20px;
+}
+.cart .cart-title h2{
+	padding:0;
+	display: inline-block;
+}
+.cart .cart-title button{
+	width: 80px;
+	height: 28px;
+	line-height: 28px;
+}
+.cart .cart-title{
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #e8e8e8;
+}
+.cart .cart-accounts{
+	height: 80px;
+	line-height: 80px;
+	display: flex;
+	justify-content:space-between;
+}
+.cart .cart-accounts span{
+	font-size: 26px;
+	color:#ff9600;
+}
+.cart-item{
+	width: 120px;
+	margin-right: 20px;
+	border:1px solid #e8e8e8;
+	text-align: center;
+}
+.cart-item div{
+	height: 35px;
+	line-height: 35px;
+}
+.cart-item div:nth-child(2) {
+	border-bottom: 1px solid #e8e8e8;
+	border-top: 1px solid #e8e8e8;
+}
+.cart-item div:nth-child(3){
+	color:#ff9600;
+}
+.cart-item p{
+	width: 100%;
+	height: 90px;
+	background-position: center;
+	background-size: 80%;
+	background-repeat: no-repeat;
+}
+
+
+.distribute-head{
+	display: flex;
+	justify-content:center;
+	padding-bottom: 30px;
+}
+.distribute-body{
+	display: flex;
+}
+.distribute-head p{
+	margin:0 20px;
+}
+.distribute-item{
+	flex:1;
+	margin: 0 10px;
+}
+.distribute p{
+	display: flex;
+	flex-direction:column;
+	justify-content:center;
+	width: 80px;
+	height: 80px;
+	border-radius: 80px;
+	font-size: 14px;
+	background-color: #ff9600;
+	text-align: center;
+	color: #fff;
+}
+.distribute .module-a{
+	background-color:#0096ff;
+}
+.distribute .module-c{
+	background-color:#d22c63;
+}
+.distribute-item .distribute-item-body{
+	display: flex;
+	border: 1px solid #e8e8e8;
+}
+.distribute-item div:nth-child(2){
+	border-left: 1px solid #e8e8e8;
+	border-right: 1px solid #e8e8e8;
+}
+.distribute-item-title {
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	border: 1px solid #e8e8e8;
+	border-bottom:none;
+}
+.distribute-item-body div{
+	height: 120px;
+	padding-top: 40px;
+	flex:1;
+	display: flex;
+	flex-direction:row;
+	justify-content:center;
+}
+
+.event{
+	display: flex;
+}
+.event .event-item{
+	text-align: center;
+	flex:1;
+}
+.event .event-item button , .event .event-item .input{
+	display: inline-block;
+	margin: 40px 0;
+}
+
+.more{
+	height: 50px;
+	line-height: 50px;
+	margin-bottom: 50px;
+	color: #ff9600;
+	text-align: center;
+}
+
+
