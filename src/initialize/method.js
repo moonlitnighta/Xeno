@@ -7,8 +7,8 @@ function proxy(fn , uuid){
 
 		//通过uuid获取实例并作为methods的上下文执行
 		let arg = arguments;
-		evaluate(function (){
-			fn.apply(get(uuid) , arg);
+		return evaluate(function (){
+			return fn.apply(get(uuid) , arg);
 		})
 	}
 }
