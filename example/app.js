@@ -29,7 +29,7 @@ var cart = {
 		<div class="cart">
 			<div class="cart-title">
 				<h2>{{title}}</h2>
-				<span><button @click="edit('add')">add</button><button @click="edit('rem')">remove</button></span>
+				<span><button @click="edit('add')">add</button><a x-html="space"></a><button @click="edit('rem')">remove</button></span>
 			</div>
 			<div class="cart-body">
 				<cart-item x-for="(item , i) of num" :name="title" @getAmount="totalAmount"></cart-item>
@@ -44,6 +44,7 @@ var cart = {
 	data:function (){
 		return {
 			num:[1],
+			space:'&nbsp;&nbsp;',
 			total:0
 		}
 	},
@@ -175,7 +176,12 @@ var components = {
 		<div class="content">
 			<div class="title"><span>{{title}}</span></div>
 			<div class="component-module">
-				<cart x-for="(item , i) of carts" :title="item"></cart>
+				<cart x-for="(item , i) of carts" :title="item + i"></cart>
+				<p>
+					<button @click="add">add</button>
+					<span x-html="space"></span>
+					<button @click="remove">remove</button>
+				</p>
 			</div>
 		</div>`,
 		components:{
@@ -185,7 +191,15 @@ var components = {
 			return {
 				space:'&nbsp;&nbsp;',
 				title:'组件化',
-				carts:['已购买' , '未付款']
+				carts:['购物车-']
+			}
+		},
+		methods:{
+			add:function (){
+				this.carts.push('购物车-');
+			},
+			remove:function (){
+				this.carts.length > 1 && this.carts.pop();
 			}
 		}
 	},
