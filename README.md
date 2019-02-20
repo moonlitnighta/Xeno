@@ -97,7 +97,7 @@ var root = new Xeno({
   },
   watch:{
     ...
-  }
+  },
   beforeCreate(){
     //beforeCreate
     this.$on('ready' , (v)=>{
